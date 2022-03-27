@@ -1,7 +1,7 @@
 kafka streams demo app
 ----------------------
 
-A simple demo app demonstrating kafka streams ETL (Extract-Load-Transform) pipeline.
+A simple demo app demonstrating kafka streams ETL (Extract-Transform-Load) pipeline.
 
 Prerequisites
 -------------
