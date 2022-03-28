@@ -19,6 +19,12 @@ docker compose pull
 
 docker compose up
 
+# if the above fails, start each container one-by-one
+# start and wait until ready
+docker compose up zookeeper
+docker compose up broker
+docker compose ksqldb-server ksqldb-cli
+
 # to stop, CTRL+C
 ```
 
