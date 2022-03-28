@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+    
+    <localRepository>path-to-your-local-maven-cache</localRepository>
+    
+    <servers>
+        <server>
+            <id>central-mirror</id>
+            <username>username</username>
+            <password>password</password>
+        </server>
+        <server>
+            <id>some-repo</id>
+            <username>username</username>
+            <password>password</password>
+        </server>
+    </servers>
+
+    <mirrors>
+        <mirror>
+            <id>central-mirror</id>
+            <mirrorOf>central,central-plugins</mirrorOf>
+            <url>your-owned-repository-mirror-url</url>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <profile>
+            <id>my-profile</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <name>Maven Central</name>
+                    <layout>default</layout>
+                    <url>https://repo1.maven.org/maven2/</url>
+                    <releases><enabled>false</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
+
+                <repository>
+                    <id>some-repo</id>
+                    <name>some-repo-name</name>
+                    <url>some-repo-url</url>
+                    <snapshots><enabled>false</enabled></snapshots>
+                    <releases><enabled>false</enabled></releases>
+                </repository>
+            </repositories>
+
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central-plugins</id>
+                    <name>Maven Central</name>
+                    <url>https://repo1.maven.org/maven2/</url>
+                    <releases><enabled>false</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>my-profile</activeProfile>
+    </activeProfiles>
+
+</settings>
