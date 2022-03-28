@@ -6,7 +6,7 @@ A simple demo app demonstrating kafka streams ETL (Extract-Transform-Load) pipel
 Prerequisites
 -------------
 
-1. Java 17 and up
+1. Java 17.0.2 and up
 1. Maven 3.8.5 and up
 1. Docker Desktop 4.6.1 and up
 
