@@ -23,7 +23,7 @@ docker compose up
 # start and wait until ready
 docker compose up zookeeper
 docker compose up broker
-docker compose ksqldb-server ksqldb-cli
+docker compose up ksqldb-server ksqldb-cli
 
 # to stop, CTRL+C
 ```
