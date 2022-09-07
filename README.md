@@ -80,8 +80,9 @@ Other
 ```bash
 # exec into ksqldb-server in order to inspect ksqldb-server various setting files
 docker exec -it --workdir /etc/ksqldb/ ksqldb-server bash
-
 ```
+
+---
 
 To see the kafka topics, configure your kafka topics inspection tool with these params:
 ```
@@ -89,6 +90,20 @@ Zookeeper host:     localhost
 Zookeeper port:     2281
 Bootstrap servers:  localhost:29092
 Broker security:    Plaintext
+```
+
+---
+
+Clean up stopped docker containers and remove automatically created volumes (start fresh):
+```bash
+# gracefully shut down all containers and clean up most of the stuff
+docker compose down
+
+# remove stopped containers
+docker compose rm
+
+# remove dangling volumes
+docker volume prune
 ```
 
 References
