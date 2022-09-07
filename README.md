@@ -6,7 +6,7 @@ A simple demo app demonstrating kafka streams ETL (Extract-Transform-Load) pipel
 Prerequisites
 -------------
 
-1. Java 17.0.3 and up
+1. Java 17.0.4 and up
 1. Maven 3.8.6 and up
 1. Docker Desktop 4.6.1 and up
 
@@ -15,11 +15,16 @@ Boot up docker containers
 -------------------------
 
 ```bash
+# pull all the necessary docker images
 docker compose pull
 
+# spin up all the containers
 docker compose up
 
-# if the above fails, start each container one-by-one
+# check if all containers are running
+docker compose ps
+
+# if the above fails, start each container one-by-one in it's own terminal window
 # start and wait until ready
 docker compose up zookeeper
 docker compose up broker
@@ -78,6 +83,13 @@ docker exec -it --workdir /etc/ksqldb/ ksqldb-server bash
 
 ```
 
+To see the kafka topics, configure your kafka topics inspection tool with these params:
+```
+Zookeeper host:     localhost
+Zookeeper port:     2281
+Bootstrap servers:  localhost:29092
+Broker security:    Plaintext
+```
 
 References
 ----------
