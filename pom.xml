@@ -16,11 +16,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
 
-        <version.kafka-streams>3.2.0</version.kafka-streams>
-        <version.kafka-clients>3.2.0</version.kafka-clients>
+        <version.kafka-streams>7.2.1-ce</version.kafka-streams>
+        <version.kafka-clients>7.2.1-ce</version.kafka-clients>
 
-        <version.slf4j-api>1.7.36</version.slf4j-api>
-        <version.logback-classic>1.2.11</version.logback-classic>
+        <version.slf4j-api>2.0.0</version.slf4j-api>
+        <version.logback-classic>1.4.0</version.logback-classic>
         <version.lombok>1.18.24</version.lombok>
         <version.junit>4.13.2</version.junit>
     </properties>
@@ -94,7 +94,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.3.0</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -110,11 +110,11 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>
-                    <version>3.0.0-M1</version>
+                    <version>3.0.1</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>
-                    <version>3.0.0-M2</version>
+                    <version>3.0.0</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-enforcer-plugin</artifactId>
@@ -122,12 +122,12 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>4.0.0-M2</version>
+                    <version>4.0.0-M3</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
