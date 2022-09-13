@@ -1,4 +1,4 @@
-package com.test;
+package com.test.appv1;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.common.serialization.Serdes;

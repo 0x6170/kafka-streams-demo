@@ -22,7 +22,7 @@ Prerequisites
 2. The Java code is located in this class: `src/main/java/com/test/appv2/App.java`
 3. Edit the `pom.xml`, change this line:
     ```XML
-    <mainClass>com.test.App</mainClass>
+    <mainClass>com.test.appv1.App</mainClass>
     ```
     to this:
     ```XML
