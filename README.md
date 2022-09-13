@@ -3,12 +3,15 @@ kafka streams demo app
 
 A simple demo app demonstrating kafka streams ETL (Extract-Transform-Load) pipeline.
 
+
+
 Prerequisites
 -------------
 
 1. Java 17.0.4 and up
 1. Maven 3.8.6 and up
 1. Docker Desktop 4.6.1 and up
+
 
 
 Boot up docker containers
@@ -32,6 +35,7 @@ docker compose up ksqldb-server ksqldb-cli
 
 # to stop, CTRL+C
 ```
+
 
 
 Do some investigations
@@ -67,6 +71,8 @@ INSERT INTO rawTempReadings(sensorID, temp) VALUES ('sensor1', -10);
 
 ```
 
+
+
 Results
 -------
 
@@ -90,6 +96,7 @@ Zookeeper host:     localhost
 Zookeeper port:     2281
 Bootstrap servers:  localhost:29092
 Broker security:    Plaintext
+Schema Registry:    http://localhost:8081/
 ```
 
 ---
@@ -105,6 +112,8 @@ docker compose rm
 # remove dangling volumes
 docker volume prune
 ```
+
+
 
 References
 ----------

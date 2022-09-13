@@ -2,4 +2,4 @@
 
 mvn clean package
 
-mvn exec:java
+java -jar target/kafka-streams-demo-jar-with-dependencies.jar
