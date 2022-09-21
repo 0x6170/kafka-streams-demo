@@ -11,6 +11,7 @@ Prerequisites
 1. Java 17.0.4 and up
 1. Maven 3.8.6 and up
 1. Docker Desktop 4.6.1 and up
+1. Bash-like terminal app
 
 
 
@@ -57,7 +58,7 @@ CREATE STREAM validatedTempReadings (sensorID VARCHAR KEY, temp INTEGER)
 SELECT * FROM validatedTempReadings EMIT CHANGES;
 
 # open another terminal window, build&run the Java app
-./run-java-app.sh
+./run-java-appv1.sh
 
 # open another terminatal window and exec into ksqldb-cli container
 docker exec -it ksqldb-cli ksql http://ksqldb-server:8088
